@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    padding: 2vh 2vh 2vh 4vh;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav .logo{
+    width: 10%;
+    font-size: 3vh;
+    font-weight: 600;
+}
+nav .username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    width: 10%;
+    height: 100%;
+    color: rgb(0, 125, 241);
+    font-weight: 600;
+    border-radius: 2vh;
+    background-color: rgb(181, 248, 249);
+}
+nav .hamburger{
+    display: none;
+}
+nav .menue{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+nav .menue ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vh;
+}
+nav .menue ul li{
+    list-style: none;
+    gap: 2vh;
+    font-size: 2vh;
+    color: rgb(82, 82, 82);
+    font-weight: 400;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    /* padding: 4vh 0 0 4vh; */
+    height: 100%;
+    width: 50%;
+
+}
+.left #h1{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0 2% 10%;
+}
+.left #h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    padding: 2% 0 2% 10%;
+    color: rgb(0, 149, 255);
+}
+.left .p{
+    display: flex;
+    padding: 2% 0 2% 12%;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    /* width: 100%; */
+    padding-left: 5vh;
+}
+.left form{
+    padding-top:5vh;
+    /* padding: 2% 0 2% 10%; */
+    padding-left: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* width: 50%; */
+    height: 13%;
+}
+.left form button{
+    height: 100%;
+    width: 40%;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    font-size: 90%;
+    cursor: pointer;
+} 
+main .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+}
+.right{
+    height: auto;
+    width: auto;
+}
+@media(width<=769px) {
+    main{
+        display: flex;
+    }
+    .left #h1{
+        font-size: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0 2% 10%;
+}
+.left #h2{
+    display: flex;
+    font-size: 5vh;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0 2% 10%;
+    color: rgb(0, 149, 255);
+}
+.left .p{
+    display: flex;
+    padding: 2% 0 2% 12%;
+    justify-content: center;
+    width: 100%;
+    font-size: 3vh;
+    color: rgb(149, 149, 149);
+    align-items: center;
+    /* width: 100%; */
+    padding-left: 5vh;
+}
+nav .username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    width: 10%;
+    height: 100%;
+    color: rgb( 181, 248, 249);
+    font-weight: 600;
+    border-radius: 2vh;
+    background-color: rgb(0, 125, 241);
+}
+.left form{
+    padding-top:8vh;
+    /* padding: 2% 0 2% 10%; */
+    padding-left: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* width: 50%; */
+    height: 17%;
+}
+.left form button{
+    height: 100%;
+    width: 60%;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    font-size: 90%;
+    cursor: pointer;
+}
+
+}
+@media(width<=426px){
+    nav{
+        box-sizing: border-box;
+    }
+    nav .menue{
+        display: none;
+    }
+    nav .username{
+    display: flex;
+    width: 10vh;
+}
+  main{
+        flex-direction: column;
+        height: auto;
+        box-sizing: auto;
+        }
+
+    .left{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+ main .right { 
+    width: 100%;
+    height: auto;
+}
+.right img{
+    width: 90%;
+    height: auto;
+}
+    .left form{
+    padding-top:5vh;
+    padding: 2% 0 2% 10%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 70%;
+    height:11vh;
+}
+    .left form button{
+    height: 100%;
+    width: 100%;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    font-size: 90%;
+    cursor: pointer;
+}
+nav .hamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+nav .hamburger .inside{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 30%;
+    gap: 4vh;
+    height: auto;
+    background-color: black;
+}
+nav .hamburger .inside ul li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+nav .hamburger input{
+    display: none;
+    padding: 2% 0 2% 10%;
+    height: 10vh;
+    width: 10vh;   
+    background-color: aqua;
+    
+}
+nav .hamburger label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  height: 6vh;
+  width: 6vh;   
+  background-color: aqua;
+  border-radius:2vh 0 2vh 0 ;
+}
+nav .hamburger label span{
+display: flex;
+width: 30px;
+height: 4px;
+background-color: black;
+}
+
+
+nav .hamburger:has(input:checked) label{
+    display: none;
+}
+
+}
+nav .hamburger:has(input:checked) .inside{
+    display: flex;
+    /* position: absolute; */
+    top: 0px;
+    right: 0px;
+    width: 30vh;
+    height: 100vh;
+}
+nav .hamburger:has(input:checked) .inside ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top:6vh ;
+    flex-direction: column;
+   gap: 4vh;
+}
